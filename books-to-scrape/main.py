@@ -23,4 +23,4 @@ for book in book_object_list:
     print(book)
 
 with open("books.json", 'w', encoding='utf-8') as books_file:
-    json.dump(book_object_list, books_file, ensure_ascii=False)
+    json.dump(book_object_list, books_file, ensure_ascii=False, indent=4)
