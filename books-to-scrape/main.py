@@ -22,5 +22,5 @@ for book_element in book_element_list:
 for book in book_object_list:
     print(book)
 
-with open("books.json", 'w') as books_file:
-    json.dump(book_object_list, books_file)
+with open("books.json", 'w', encoding='utf-8') as books_file:
+    json.dump(book_object_list, books_file, ensure_ascii=False)
