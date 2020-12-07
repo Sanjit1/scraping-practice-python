@@ -15,7 +15,7 @@ for book_element in book_element_list:
             'title': list(book_element.find_all("h3")[0].children)[0]["title"], 
             'url': "http://books.toscrape.com/" + list(book_element.find_all("h3")[0].children)[0]["href"],
             'price': book_element.find_all("p", class_="price_color")[0].getText(),
-            'rating': book_element.find_all("p", class_="star-rating")[0]['class'][1] + "Stars"
+            'rating': book_element.find_all("p", class_="star-rating")[0]['class'][1] + " Stars"
         })
 
 for book in book_object_list:
