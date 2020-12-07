@@ -18,5 +18,9 @@ for book_element in book_element_list:
             'rating': book_element.find_all("p", class_="star-rating")[0]['class'][1] + " Stars"
         })
 
+
 for book in book_object_list:
     print(book)
+
+with open("books.json", 'w') as books_file:
+    json.dump(book_object_list, books_file)
